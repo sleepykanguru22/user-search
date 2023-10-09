@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root[color-mode="dark"] {
+  --body-bg-color-: #141d2f;
+  --head-color-: #ffffff;
+  --darklight-color-: #ffffff;
+  --search-bg-color-: #1e2a47;
+  --search-color-: #ffffff;
+  --black-: white;
+  --follow-bg-color: #f6f8ff;
+  --follow-color-: white;
+  --followTotal-color-: #ffffff;
+  --social-color-: white;
+}
+body {
+  background-color: var(--body-bg-color-);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Franlin", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "Red hat Text", sans-serif;
+  font-family: "Space Mono", monospace;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 730px;
+  margin-bottom: 25px;
+}
+.head {
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--head-color-);
+}
+:root[color-mode="light"].light--hidden {
+  display: none;
+}
+
+:root[color-mode="dark"].dark--hidden {
+  display: none;
+}
+.color-mode__btn {
+  font-size: 13px;
+  outline: none;
+  background-color: var(--body-bg-color-);
+  border: none;
+  cursor: pointer;
+  color: var(--darklight-color-);
+  display: flex;
+  align-items: center;
+  width: 78px;
+  justify-content: space-between;
+}
+.dark img,
+.light img {
+  width: 20px;
+  height: 20px;
+}
+
+.search {
+  width: 730px;
+  height: 69px;
+  background-color: var(--search-bg-color-);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchText {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.searchText img {
+  margin-left: 35px;
+}
+.searchText input {
+  margin-left: 20px;
+  width: 500px;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: var(--search-color-);
+  background-color: var(--search-bg-color-);
+}
+::placeholder {
+  color: var(--search-color-);
+  opacity: 1;
+}
+
+.searchbtn {
+  height: 50px;
+  width: 106px;
+  background-color: #0079ff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.resultBody {
+  background-color: var(--search-bg-color-);
+  width: 730px;
+  height: 419px;
+  border-radius: 15px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resultBody .mainImg {
+  width: 117px;
+  height: 117px;
+  border: 1px solid var(--black-);
+  border-radius: 117px;
+  object-fit: contain;
+}
+
+.resultBody .mainImg img {
+  width: 117px;
+  height: 117px;
+  object-fit: contain;
+  border-radius: 117px;
+}
+
+.githubHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 650px;
+  margin-top: 30px;
+}
+
+.githubInfo {
+  width: 480px;
+  height: 100%;
+  position: relative;
+}
+
+.githubUser {
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--followTotal-color-);
+}
+
+.joinedDate {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  font-size: 15px;
+  color: var(--darklight-color-);
+}
+
+.githubUserName {
+  /* color: #0079ff; */
+  margin-top: 5px;
+}
+
+.githubUserName a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #0079ff;
+}
