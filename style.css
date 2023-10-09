@@ -176,3 +176,169 @@ header {
   font-size: 16px;
   color: #0079ff;
 }
+
+.githubFact {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.githubBio {
+  width: 480px;
+  height: 25px;
+  color: var(--search-color-);
+  margin-top: 30px;
+}
+
+.githubRepo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--body-bg-color-);
+  border-radius: 10px;
+  width: 480px;
+  height: 85px;
+}
+
+.repoHeading,
+.followerHeading,
+.followingHeading {
+  font-size: 13px;
+  color: var(--follow-color-);
+}
+
+.repoTotal,
+.followerTotal,
+.followingTotal {
+  font-weight: bold;
+  font-size: 22px;
+  color: var(--followTotal-color-);
+}
+
+.githubSocial {
+  display: grid;
+  grid-template-columns: 240px 240px;
+  row-gap: 1.2em;
+  color: var(--social-color-);
+  margin-top: 30px;
+}
+
+.location,
+.twitter,
+.website,
+.company {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.location img,
+.twitter img,
+.website img,
+.company img {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 769px) {
+  header,
+  .search {
+    width: 574px;
+  }
+  .searchText input {
+    width: 400px;
+  }
+  .resultBody {
+    width: 573px;
+    height: 481px;
+  }
+  .githubHead,
+  .githubRepo,
+  .githubSocial,
+  .githubFact {
+    width: 493px;
+  }
+  .githubInfo {
+    width: 350px;
+  }
+  .joinedDate {
+    top: 70px;
+    left: 0;
+  }
+  .githubFact {
+    align-items: flex-start;
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 415px) {
+  header,
+  .search {
+    width: 327px;
+    margin-left: 10px;
+    height: 60px;
+  }
+
+  .searchText img {
+    margin-left: 15px;
+  }
+
+  .searchText input {
+    width: 160px;
+    font-size: 12px;
+  }
+  .searchbtn {
+    width: 84px;
+    height: 46px;
+    font-size: 12px;
+  }
+  .resultBody {
+    width: 327px;
+  }
+  .githubFact,
+  .githubHead {
+    width: 279px;
+  }
+  .resultBody .mainImg {
+    width: 60px;
+    height: 60px;
+  }
+  .resultBody .mainImg img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .githubInfo {
+    width: 200px;
+  }
+  .githubUser {
+    font-size: 18px;
+  }
+  .githubUserName {
+    margin-top: -5px;
+  }
+
+  .joinedDate {
+    top: 48px;
+  }
+
+  .githubUserName a,
+  .joinedDate,
+  .githubBio {
+    font-size: 12px;
+  }
+  .githubBio {
+    margin-top: 25px;
+  }
+  .githubRepo {
+    width: 279px;
+  }
+  .githubSocial {
+    grid-template-columns: 279px;
+  }
+
+  .repoTotal,
+  .followerTotal,
+  .followingTotal {
+    text-align: center;
+  }
+}
