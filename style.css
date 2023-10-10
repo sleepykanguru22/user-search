@@ -2,6 +2,16 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --body-bg-color-: #f6f8ff;
+  --head-color-: #222731;
+  --darklight-color-: #697c9a;
+  --search-bg-color-: #ffffff;
+  --search-color-: #4b6a9b;
+  --black-: black;
+  --follow-color-: #4b6a9b;
+  --followTotal-color-: #ffffff;
+}
 :root[color-mode="dark"] {
   --body-bg-color-: #141d2f;
   --head-color-: #ffffff;
@@ -39,13 +49,7 @@ header {
   font-weight: bold;
   color: var(--head-color-);
 }
-:root[color-mode="light"].light--hidden {
-  display: none;
-}
 
-:root[color-mode="dark"].dark--hidden {
-  display: none;
-}
 .color-mode__btn {
   font-size: 13px;
   outline: none;
